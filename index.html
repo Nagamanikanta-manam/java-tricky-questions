@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Tricky Questions</title>
+    <style>
+      /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 10px 0 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+article {
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+pre {
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px;
+    overflow: auto;
+}
+
+code {
+    font-family: monospace;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 5px 0;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Java Tricky Questions</h1>
+        <p>Welcome to the Java Tricky Questions page! Here, you will find challenging Java questions designed to test and improve your programming skills.</p>
+    </header>
+    <main>
+        <section>
+            <h2>Questions</h2>
+            
+            <article>
+                <h3>Question 1</h3>
+                <pre><code>public class Main {
+    public static void main(String[] args) {
+        byte a = "durga";
+        System.out.print(a);
+    }
+}</code></pre>
+                <p>What will be the outcome when you try to compile this program?</p>
+                <ul>
+                    <li><strong>A.</strong> Compilation Error: incompatible types: String cannot be converted to byte</li>
+                    <li><strong>B.</strong> Compilation Error: incompatible types: possible lossy conversion</li>
+                    <li><strong>C.</strong> 0</li>
+                    <li><strong>D.</strong> Exception</li>
+                </ul>
+                <p><strong>Answer:</strong> A. Compilation Error: incompatible types: String cannot be converted to byte</p>
+                <p><strong>Explanation:</strong> The code will produce a compilation error because a String cannot be assigned to a byte variable.</p>
+            </article>
+
+            <article>
+                <h3>Question 2</h3>
+                <pre><code>public class Main {
+    public static void main(String[] args) {
+        byte a = 10.5;
+        System.out.print(a);
+    }
+}</code></pre>
+                <p>What will be the outcome when you try to compile this program?</p>
+                <ul>
+                    <li><strong>A.</strong> Compilation Error: incompatible types: possible lossy conversion from double to byte</li>
+                    <li><strong>B.</strong> Compilation Error: incompatible types: possible lossy conversion from float to byte</li>
+                    <li><strong>C.</strong> 10</li>
+                    <li><strong>D.</strong> Exception</li>
+                </ul>
+                <p><strong>Answer:</strong> A. Compilation Error: incompatible types: possible lossy conversion from double to byte</p>
+                <p><strong>Explanation:</strong> The code will produce a compilation error because 10.5 is a double literal, which cannot be directly assigned to a byte variable without explicit casting.</p>
+            </article>
+
+            <article>
+                <h3>Question 3</h3>
+                <pre><code>public class Main {
+    public static void main(String[] args) {
+        byte a = "10.5";
+        System.out.print(a);
+    }
+}</code></pre>
+                <p>What will be the outcome when you try to compile this program?</p>
+                <ul>
+                    <li><strong>A.</strong> Compilation Error: incompatible types: String cannot be converted to byte</li>
+                    <li><strong>B.</strong> Compilation Error: incompatible types: possible lossy conversion</li>
+                    <li><strong>C.</strong> 0</li>
+                    <li><strong>D.</strong> Exception</li>
+                </ul>
+                <p><strong>Answer:</strong> A. Compilation Error: incompatible types: String cannot be converted to byte</p>
+                <p><strong>Explanation:</strong> The code will produce a compilation error because "10.5" is a String, and cannot be assigned to a byte variable.</p>
+            </article>
+
+            <article>
+                <h3>Question 4</h3>
+                <pre><code>public class Main {
+    public static void main(String[] args) {
+        byte a = 128;
+        System.out.print(a);
+    }
+}</code></pre>
+                <p>What will be the outcome when you try to compile this program?</p>
+                <ul>
+                    <li><strong>A.</strong> Compilation Error: constant expression required</li>
+                    <li><strong>B.</strong> Compilation Error: possible lossy conversion from int to byte</li>
+                    <li><strong>C.</strong> 128</li>
+                    <li><strong>D.</strong> Exception</li>
+                </ul>
+                <p><strong>Answer:</strong> B. Compilation Error: possible lossy conversion from int to byte</p>
+                <p><strong>Explanation:</strong> The code will produce a compilation error because 128 is outside the valid range for a byte (-128 to 127). Assigning 128 to a byte variable requires explicit casting to handle the value properly.</p>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Java Tricky Questions</p>
+    </footer>
+</body>
+</html>
