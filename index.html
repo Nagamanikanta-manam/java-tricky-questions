@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Java Tricky Questions</title>
     <style>
-      /* styles.css */
+        /* styles.css */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -34,6 +34,10 @@ main {
     padding: 20px;
     max-width: 800px;
     margin: auto;
+}
+
+section {
+    margin-bottom: 20px;
 }
 
 article {
@@ -69,6 +73,15 @@ ul li {
     padding: 5px 0;
 }
 
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 footer {
     background: #333;
     color: #fff;
@@ -87,6 +100,16 @@ footer {
         <p>Welcome to the Java Tricky Questions page! Here, you will find challenging Java questions designed to test and improve your programming skills.</p>
     </header>
     <main>
+        <section>
+            <h2>Topics Covered</h2>
+            <ul>
+                <li>Type Conversion</li>
+                <li>Data Types</li>
+                <li>Compilation Errors</li>
+                <li>Type Casting</li>
+            </ul>
+        </section>
+
         <section>
             <h2>Questions</h2>
             
@@ -107,6 +130,7 @@ footer {
                 </ul>
                 <p><strong>Answer:</strong> A. Compilation Error: incompatible types: String cannot be converted to byte</p>
                 <p><strong>Explanation:</strong> The code will produce a compilation error because a String cannot be assigned to a byte variable.</p>
+                <p><a href="https://www.youtube.com/watch?v=example" target="_blank">Watch YouTube Explanation</a></p>
             </article>
 
             <article>
@@ -126,6 +150,7 @@ footer {
                 </ul>
                 <p><strong>Answer:</strong> A. Compilation Error: incompatible types: possible lossy conversion from double to byte</p>
                 <p><strong>Explanation:</strong> The code will produce a compilation error because 10.5 is a double literal, which cannot be directly assigned to a byte variable without explicit casting.</p>
+                <p><a href="https://www.youtube.com/watch?v=example" target="_blank">Watch YouTube Explanation</a></p>
             </article>
 
             <article>
@@ -145,6 +170,7 @@ footer {
                 </ul>
                 <p><strong>Answer:</strong> A. Compilation Error: incompatible types: String cannot be converted to byte</p>
                 <p><strong>Explanation:</strong> The code will produce a compilation error because "10.5" is a String, and cannot be assigned to a byte variable.</p>
+                <p><a href="https://www.youtube.com/watch?v=example" target="_blank">Watch YouTube Explanation</a></p>
             </article>
 
             <article>
@@ -164,8 +190,8 @@ footer {
                 </ul>
                 <p><strong>Answer:</strong> B. Compilation Error: possible lossy conversion from int to byte</p>
                 <p><strong>Explanation:</strong> The code will produce a compilation error because 128 is outside the valid range for a byte (-128 to 127). Assigning 128 to a byte variable requires explicit casting to handle the value properly.</p>
+                <p><a href="https://www.youtube.com/watch?v=example" target="_blank">Watch YouTube Explanation</a></p>
             </article>
-
         </section>
     </main>
     <footer>
