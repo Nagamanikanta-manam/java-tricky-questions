@@ -186,6 +186,53 @@ footer {
                 <p><strong>Explanation:</strong> The code will produce a compilation error because 128 is outside the valid range for a byte (-128 to 127). Assigning 128 to a byte variable requires explicit casting to handle the value properly.</p>
                 <p><a href="https://youtu.be/njy7NGYzsvM?si=17nzM6dWDBNL72cV&t=2501" target="_blank">Watch YouTube Explanation</a></p>
             </article>
+            <article>
+    <h3>Question 5</h3>
+     <p>What is the best use of the `short` data type in Java?</p>
+    <p><strong>Topic:</strong> Short Data Type</p>
+   
+    <ul>
+        <li><strong>A.</strong> To store values between -32768 and 32767</li>
+        <li><strong>B.</strong> To store large floating-point numbers</li>
+        <li><strong>C.</strong> To work with 16-bit processors</li>
+        <li><strong>D.</strong> To store single characters</li>
+    </ul>
+    <p><strong>Answer:</strong> C. To work with 16-bit processors</p>
+    <p><strong>Explanation:</strong> The `short` data type is a 16-bit signed integer. It was originally designed to work efficiently with 16-bit processors by using less memory than `int` or `long`. While `short` is not typically used directly to interface with processors, it is conceptually aligned with the architecture of 16-bit systems.</p>
+    <p><a href="https://youtu.be/njy7NGYzsvM?si=dIml1n50t4L6HqPH&t=3365" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+<article>
+    <h3>Question 6</h3>
+   
+    <p><strong>Topic:</strong> Byte Data Type </p>
+    <p>What is the best use of the `byte` data type in Java?</p>
+    <ul>
+        <li><strong>A.</strong> To store values between -128 and 127</li>
+        <li><strong>B.</strong> To handle data streams</li>
+    </ul>
+    <p><strong>Answer:</strong> B. To handle data streams</p>
+    <p><strong>Explanation:</strong> The `byte` data type is often used in Java for handling data streams, such as reading from or writing to files or network connections. Although it can store values between -128 and 127, its primary use in this context is for managing raw binary data, which is essential in data stream operations.</p>
+    <p><a href="https://youtu.be/njy7NGYzsvM?si=pEt1Yt16mpaNFhNF&t=2625" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+<article>
+    <h3>Question 7</h3>
+    <pre><code>public class Main {
+    public static void main(String[] args) {
+        int x = 2147483648;
+        System.out.print(x);
+    }
+}</code></pre>
+    <p><strong>Topic:</strong> Int data type</p>
+    <p>What will be the outcome when you try to compile and run this program?</p>
+    <ul>
+        <li><strong>A.</strong> Compilation Error: integer number too large</li>
+        <li><strong>B.</strong> Compilation Error: incompatible types: possible lossy conversion from long to int</li>
+    </ul>
+    <p><strong>Answer:</strong> A. Compilation Error: integer number too large</p>
+    <p><strong>Explanation:</strong> In Java, integer literals are treated as `int` by default. The value `2147483648` exceeds the maximum value an `int` can hold, which is `2147483647`. As a result, the compiler reports an error indicating that the number is too large to fit within the `int` type. The error is specifically about the literal being out of the range for `int` values.</p>
+    <p><a href="https://youtu.be/njy7NGYzsvM?si=DX71JdSZ4EYjGOGL&t=3667" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+
         </section>
     </main>
     <footer>
