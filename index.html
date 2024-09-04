@@ -100,28 +100,40 @@ footer {
         <p>Welcome to the Java Tricky Questions page! Here, you will find challenging Java questions designed to test and improve your programming skills.</p>
     </header>
     <main>
-        <section>
-            <h2>Topics Covered</h2>
-            <ul>
-                <li>Type Conversion</li>
-                <li>Data Types</li>
-                <li>Compilation Errors</li>
-                <li>Type Casting</li>
-            </ul>
-        </section>
+       
 
         <section>
             <h2>Questions</h2>
-            
             <article>
-                <h3>Question 1</h3>
+    <h3>Question 1</h3>
+    <pre><code>public class Main {
+    public static void main(String[] args) {
+        int String = 10;
+        System.out.print(String);
+    }
+}</code></pre>
+    <p><strong>Topic:</strong> Variable Naming</p>
+    <p>What will be the outcome when you try to compile this program?</p>
+    <ul>
+        <li><strong>A.</strong> Compilation Error: 'String' is a reserved keyword</li>
+        <li><strong>B.</strong> Compilation Error: 'int' cannot be used as an identifier</li>
+        <li><strong>C.</strong> 10</li>
+        <li><strong>D.</strong> Exception</li>
+    </ul>
+    <p><strong>Answer:</strong> C. 10</p>
+    <p><strong>Explanation:</strong> The code will compile and run successfully because although `String` is a reserved keyword, in this context it is used as a variable name. The variable `String` is assigned the value 10, which will be printed by the `System.out.print` statement.</p>
+    <p><a href="https://youtu.be/eTXd89t8ngI?si=A03rJxilij-gp6xB" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+
+            <article>
+                <h3>Question 2</h3>
                 <pre><code>public class Main {
     public static void main(String[] args) {
         byte a = "durga";
         System.out.print(a);
     }
 }</code></pre>
-                <p><strong>Topic:</strong> Type Conversion</p>
+                <p><strong>Topic:</strong> Data Type</p>
                 <p>What will be the outcome when you try to compile this program?</p>
                 <ul>
                     <li><strong>A.</strong> Compilation Error: incompatible types: String cannot be converted to byte</li>
@@ -131,11 +143,11 @@ footer {
                 </ul>
                 <p><strong>Answer:</strong> A. Compilation Error: incompatible types: String cannot be converted to byte</p>
                 <p><strong>Explanation:</strong> The code will produce a compilation error because a String cannot be assigned to a byte variable.</p>
-                <p><a href="https://www.youtube.com/watch?v=example1" target="_blank">Watch YouTube Explanation</a></p>
+                <p><a href="https://youtu.be/njy7NGYzsvM?si=17nzM6dWDBNL72cV&t=2501" target="_blank">Watch YouTube Explanation</a></p>
             </article>
 
             <article>
-                <h3>Question 2</h3>
+                <h3>Question 3</h3>
                 <pre><code>public class Main {
     public static void main(String[] args) {
         byte a = 10.5;
@@ -152,31 +164,9 @@ footer {
                 </ul>
                 <p><strong>Answer:</strong> A. Compilation Error: incompatible types: possible lossy conversion from double to byte</p>
                 <p><strong>Explanation:</strong> The code will produce a compilation error because 10.5 is a double literal, which cannot be directly assigned to a byte variable without explicit casting.</p>
-                <p><a href="https://www.youtube.com/watch?v=example2" target="_blank">Watch YouTube Explanation</a></p>
+                <p><a href="https://youtu.be/njy7NGYzsvM?si=17nzM6dWDBNL72cV&t=2501" target="_blank">Watch YouTube Explanation</a></p>
             </article>
-
-            <article>
-                <h3>Question 3</h3>
-                <pre><code>public class Main {
-    public static void main(String[] args) {
-        byte a = "10.5";
-        System.out.print(a);
-    }
-}</code></pre>
-                <p><strong>Topic:</strong> Type Casting</p>
-                <p>What will be the outcome when you try to compile this program?</p>
-                <ul>
-                    <li><strong>A.</strong> Compilation Error: incompatible types: String cannot be converted to byte</li>
-                    <li><strong>B.</strong> Compilation Error: incompatible types: possible lossy conversion</li>
-                    <li><strong>C.</strong> 0</li>
-                    <li><strong>D.</strong> Exception</li>
-                </ul>
-                <p><strong>Answer:</strong> A. Compilation Error: incompatible types: String cannot be converted to byte</p>
-                <p><strong>Explanation:</strong> The code will produce a compilation error because "10.5" is a String, and cannot be assigned to a byte variable.</p>
-                <p><a href="https://www.youtube.com/watch?v=example3" target="_blank">Watch YouTube Explanation</a></p>
-            </article>
-
-            <article>
+             <article>
                 <h3>Question 4</h3>
                 <pre><code>public class Main {
     public static void main(String[] args) {
@@ -194,7 +184,7 @@ footer {
                 </ul>
                 <p><strong>Answer:</strong> B. Compilation Error: possible lossy conversion from int to byte</p>
                 <p><strong>Explanation:</strong> The code will produce a compilation error because 128 is outside the valid range for a byte (-128 to 127). Assigning 128 to a byte variable requires explicit casting to handle the value properly.</p>
-                <p><a href="https://www.youtube.com/watch?v=example4" target="_blank">Watch YouTube Explanation</a></p>
+                <p><a href="https://youtu.be/njy7NGYzsvM?si=17nzM6dWDBNL72cV&t=2501" target="_blank">Watch YouTube Explanation</a></p>
             </article>
         </section>
     </main>
