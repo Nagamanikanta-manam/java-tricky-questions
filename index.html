@@ -232,6 +232,50 @@ footer {
     <p><strong>Explanation:</strong> In Java, integer literals are treated as `int` by default. The value `2147483648` exceeds the maximum value an `int` can hold, which is `2147483647`. As a result, the compiler reports an error indicating that the number is too large to fit within the `int` type. The error is specifically about the literal being out of the range for `int` values.</p>
     <p><a href="https://youtu.be/njy7NGYzsvM?si=DX71JdSZ4EYjGOGL&t=3667" target="_blank">Watch YouTube Explanation</a></p>
 </article>
+<article>
+    <h3>Question 8</h3>
+    <pre><code>public class Main {
+    public static void main(String[] args) {
+        int x = 0;
+        if(x) {
+            System.out.print(x);
+        } else {
+            System.out.print(0);
+        }
+    }
+}</code></pre>
+    <p><strong>Topic:</strong>Data Types</p>
+    <p>What will be the outcome when you try to compile this program?</p>
+    <ul>
+        <li><strong>A.</strong> 0</li>
+        <li><strong>B.</strong> Compilation Error: incompatible types: int cannot be converted to boolean</li>
+        <li><strong>C.</strong> Compilation Error: Missing return statement</li>
+        <li><strong>D.</strong> Exception</li>
+    </ul>
+    <p><strong>Answer:</strong> B. Compilation Error: incompatible types: int cannot be converted to boolean</p>
+    <p><strong>Explanation:</strong> The code will fail to compile because in Java, the `if` statement expects a boolean expression, but here an `int` (0) is used. Since `int` cannot be directly converted to `boolean`, the compiler will throw an error.</p>
+    <p><a href="https://youtu.be/HYAosZptldA?si=zo1qaESMwRYYwtTO&t=1805" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+<article>
+    <h3>Question 9</h3>
+    <pre><code>public class Main {
+    public static void main(String[] args) {
+        char ch = null;
+        System.out.println(ch);
+    }
+}</code></pre>
+    <p><strong>Topic:</strong> Primitive Data Types</p>
+    <p>What will be the outcome when you try to compile this program?</p>
+    <ul>
+        <li><strong>A.</strong> null</li>
+        <li><strong>B.</strong> Compilation Error: incompatible types: &lt;null&gt; cannot be converted to char</li>
+        <li><strong>C.</strong> Compilation Error: char cannot be initialized</li>
+        <li><strong>D.</strong> No Output</li>
+    </ul>
+    <p><strong>Answer:</strong> B. Compilation Error: incompatible types: &lt;null&gt; cannot be converted to char</p>
+    <p><strong>Explanation:</strong> The `char` data type in Java is a primitive type and cannot hold the `null` value. `null` is used for object references, not for primitive types like `char`. Therefore, trying to assign `null` to a `char` variable will result in a compilation error.</p>
+    <p><a href="https://youtu.be/HYAosZptldA?si=iLZ-2-G41lsyEXBw&t=3153" target="_blank">Watch YouTube Explanation</a></p>
+</article>
 
         </section>
     </main>
