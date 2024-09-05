@@ -469,6 +469,126 @@ footer {
     <p><strong>Explanation:</strong> In Java, underscores (`_`) can be used in numeric literals to improve readability, but they must be placed between digits. An underscore at the end of the number, like in `1223_`, is not allowed and will cause a compilation error with the message "illegal underscore."</p>
     <p><a href="https://youtu.be/IJ0xCDR_Dlw?si=1hjesQ_HKQesI50F&t=3239" target="_blank">Watch YouTube Explanation</a></p>
 </article>
+<article>
+    <h3>Question 19</h3>
+    <pre><code>Which of the following are valid ways to declare an array in Java?</code></pre>
+    <ul>
+        <li><strong>A.</strong> int[] x</li>
+        <li><strong>B.</strong> int x[]</li>
+        <li><strong>C.</strong> int []x</li>
+        <li><strong>D.</strong> All of the above</li>
+    </ul>
+    <p><strong>Answer:</strong> D. All of the above</p>
+    <p><strong>Explanation:</strong> 
+        In Java, arrays can be declared in multiple ways:
+        - `int[] x;` declares an array where the brackets are placed before the variable name.
+        - `int x[];` declares an array where the brackets are placed after the variable name.
+        - `int []x;` also declares an array with brackets before the variable name. 
+        All three forms are valid in Java and can be used interchangeably to declare an array.</p>
+    <p><a href="https://youtu.be/example" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+        <article>
+    <h3>Question 20</h3>
+    <pre><code>Which of the following are valid ways to declare an array in Java?</code></pre>
+    <ul>
+        <li><strong>A.</strong> int[] x</li>
+        <li><strong>B.</strong> int x[]</li>
+        <li><strong>C.</strong> int []x</li>
+        <li><strong>D.</strong> All of the above</li>
+    </ul>
+    <p><strong>Answer:</strong> D. All of the above</p>
+    <p><strong>Explanation:</strong> 
+        In Java, arrays can be declared in multiple ways:
+        - `int[] x;` declares an array where the brackets are placed before the variable name.
+        - `int x[];` declares an array where the brackets are placed after the variable name.
+        - `int []x;` also declares an array with brackets before the variable name. 
+        All three forms are valid in Java and can be used interchangeably to declare an array.</p>
+    <p><a href="https://youtu.be/HSp0UX9Z8Zw?si=-wthZUHxU3DHuztf&t=842" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+            <article>
+    <h3>Question 21</h3>
+    <pre><code>int[][] a, b[];</code></pre>
+    <p><strong>Topic:</strong> Array Dimensions</p>
+    <p>What are the dimensions of the arrays `a` and `b` in the given declaration?</p>
+    <ul>
+        <li><strong>A.</strong> `a` is a 2D array and `b` is a 2D array</li>
+        <li><strong>B.</strong> `a` is a 1D array and `b` is a 1D array</li>
+        <li><strong>C.</strong> `a` is a 2D array and `b` is a 3D array</li>
+        <li><strong>D.</strong> `a` is a 2D array and `b` is a 1D array of 2D arrays</li>
+    </ul>
+    <p><strong>Answer:</strong> C. `a` is a 2D array and `b` is a 3D array</p>
+    <p><strong>Explanation:</strong> 
+        - `int[][] a;` declares `a` as a 2D array.
+        - `b[]` declares `b` as an array of 2D arrays, which effectively makes `b` a 3D array.
+        Therefore, `a` is a 2D array and `b` is a 3D array.</p>
+    <p><a href="https://youtu.be/HSp0UX9Z8Zw?si=w7UatdE-TsKDi8Jz&t=1656" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+<article>
+    <h3>Question 22</h3>
+    <pre><code>int[] a, []b;</code></pre>
+    <p><strong>Topic:</strong> Array Declaration Syntax</p>
+    <p>What will be the outcome when you try to compile this program?</p>
+    <ul>
+        <li><strong>A.</strong> Compilation will succeed</li>
+        <li><strong>B.</strong> Compilation Error: ';' expected</li>
+        <li><strong>C.</strong> Both `a` and `b` will be arrays</li>
+        <li><strong>D.</strong> Syntax Error: Invalid array declaration</li>
+    </ul>
+    <p><strong>Answer:</strong> B. Compilation Error: ';' expected</p>
+    <p><strong>Explanation:</strong> 
+        In Java, the array declaration syntax requires that the brackets are placed either before or after the variable name consistently. The declaration `int[] a, []b;` is incorrect because the second array `b` is not properly declared. This causes the compiler to expect a semicolon to terminate the statement, resulting in the error `';' expected`. To fix this, the correct syntax would be `int[] a, b[];`.</p>
+    <p><a href="https://youtu.be/HSp0UX9Z8Zw?si=w7UatdE-TsKDi8Jz&t=1656" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+
+<article>
+    <h3>Question 23</h3>
+    <pre><code>int[] x = new int[0];</code></pre>
+    <p><strong>Topic:</strong> Array Initialization</p>
+    <p>What will happen when you try to run this program?</p>
+    <ul>
+        <li><strong>A.</strong> Compilation Error: Cannot create an array of size 0</li>
+        <li><strong>B.</strong> Runtime Error: Array index out of bounds</li>
+        <li><strong>C.</strong> The program will run successfully, and the array will have zero elements</li>
+        <li><strong>D.</strong> Runtime Error: NullPointerException</li>
+    </ul>
+    <p><strong>Answer:</strong> C. The program will run successfully, and the array will have zero elements</p>
+    <p><strong>Explanation:</strong> 
+        In Java, it is perfectly valid to create an array of size 0. The array `x` will be initialized, but it will not contain any elements. No errors will occur unless you try to access elements at any index, which would result in an `ArrayIndexOutOfBoundsException`. However, declaring and initializing an array with size 0 will not cause any errors by itself.</p>
+    <p><a href="https://youtu.be/HSp0UX9Z8Zw?si=LBuWNIrWoJeiL5v4&t=3207" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+
+<article>
+    <h3>Question 24</h3>
+    <pre><code>int[] x = new int[-3];</code></pre>
+    <p><strong>Topic:</strong> Array Initialization with Negative Size</p>
+    <p>What will happen when you try to compile and run this program?</p>
+    <ul>
+        <li><strong>A.</strong> Compile-time Error: Array size cannot be negative</li>
+        <li><strong>B.</strong> Run-time Error: NegativeArraySizeException</li>
+        <li><strong>C.</strong> The program will run successfully, and the array will have zero elements</li>
+        <li><strong>D.</strong> Compile-time Error: Invalid array declaration</li>
+    </ul>
+    <p><strong>Answer:</strong> B. Run-time Error: NegativeArraySizeException</p>
+    <p><strong>Explanation:</strong> 
+        In Java, array size cannot be negative. The code will compile successfully because the array size is provided as an integer, which is syntactically correct. However, at runtime, when the array `x` is initialized with a negative size, the Java Virtual Machine (JVM) will throw a `NegativeArraySizeException`. This exception occurs because negative array sizes are invalid in Java.</p>
+    <p><a href="https://youtu.be/HSp0UX9Z8Zw?si=b5aUSku47_I5FCBQ&t=3367" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+<article>
+    <h3>Question 25</h3>
+    <pre><code>int[] x = new int[10l];</code></pre>
+    <p><strong>Topic:</strong> Array Size Initialization</p>
+    <p>What will happen when you try to compile this code?</p>
+    <ul>
+        <li><strong>A.</strong> The program will compile and run successfully</li>
+        <li><strong>B.</strong> Compile-time Error: Incompatible types: possible lossy conversion from long to int</li>
+        <li><strong>C.</strong> Run-time Error: NegativeArraySizeException</li>
+        <li><strong>D.</strong> Compile-time Error: Array size must be a positive integer literal</li>
+    </ul>
+    <p><strong>Answer:</strong> B. Compile-time Error: Incompatible types: possible lossy conversion from long to int</p>
+    <p><strong>Explanation:</strong> 
+        In Java, the size of an array must be specified using an `int`, `byte`, or `short` literal. The size provided in the code is `10l`, which is of type `long`. Java requires the array size to be of type `int` (or types that can be implicitly cast to `int`), so trying to initialize the array with a `long` value will result in a compile-time error: "Incompatible types: possible lossy conversion from long to int."</p>
+    <p><a href="https://youtu.be/HSp0UX9Z8Zw?si=DygEYVsrJ2fRCfvw&t=3812" target="_blank">Watch YouTube Explanation</a></p>
+</article>
 
 
 
