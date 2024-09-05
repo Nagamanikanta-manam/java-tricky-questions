@@ -297,7 +297,7 @@ footer {
     <p><a href="https://youtu.be/Eng8Oi-p2r4?si=q55WHeoZDSO_5hLn&t=1091" target="_blank">Watch YouTube Explanation</a></p>
 </article>
 <article>
-    <h3>Question 5</h3>
+    <h3>Question 11</h3>
     <pre><code>public class Main {
     public static void main(String[] args) {
         int i = 0xface;
@@ -317,7 +317,7 @@ footer {
     <p><a href="https://youtu.be/Eng8Oi-p2r4?si=q55WHeoZDSO_5hLn&t=1091" target="_blank">Watch YouTube Explanation</a></p>
 </article>
 <article>
-    <h3>Question 6</h3>
+    <h3>Question 12</h3>
     <pre><code>public class Main {
     public static void main(String[] args) {
         int i = 10;
@@ -344,7 +344,7 @@ footer {
     <p><a href="https://youtu.be/Eng8Oi-p2r4?si=ticeoZ_-OWEetaWK&t=1520" target="_blank">Watch YouTube Explanation</a></p>
 </article>
 <article>
-    <h3>Question 7</h3>
+    <h3>Question 13</h3>
     <pre><code>public class Main {
     public static void main(String[] args) {
         double i = 10.0d;
@@ -365,7 +365,7 @@ footer {
     <p><a href="https://youtu.be/Eng8Oi-p2r4?si=F9hqo7iDResrsAUr" target="_blank">Watch YouTube Explanation</a></p>
 </article>
 <article>
-    <h3>Question 8</h3>
+    <h3>Question 14</h3>
     <pre><code>public class Main {
     public static void main(String[] args) {
         double i = 10.0d;
@@ -386,7 +386,7 @@ footer {
     <p><a href="https://youtu.be/Eng8Oi-p2r4?si=F9hqo7iDResrsAUr" target="_blank">Watch YouTube Explanation</a></p>
 </article>
 <article>
-    <h3>Question 9</h3>
+    <h3>Question 15</h3>
     <pre><code>public class Main {
     public static void main(String[] args) {
         float i = 10.0;
@@ -407,7 +407,7 @@ footer {
     <p><a href="https://youtu.be/Eng8Oi-p2r4?si=U1FJARed7wvXOF4J&t=2648" target="_blank">Watch YouTube Explanation</a></p>
 </article>
 <article>
-    <h3>Question 10</h3>
+    <h3>Question 16</h3>
     <pre><code>public class Main {
     public static void main(String[] args) {
         double i = 0x10.0;
@@ -427,6 +427,49 @@ footer {
     <p><strong>Explanation:</strong> In Java, hexadecimal literals (numbers starting with `0x`) are used only for integers, not for floating-point numbers. Attempting to assign a hexadecimal value with a fractional part (like `0x10.0`) will cause a compilation error with the message "malformed floating-point literal." Java does not support floating-point hexadecimal literals in this form.</p>
     <p><a href="https://youtu.be/Eng8Oi-p2r4?si=jOtHVUN_QTmIWXij&t=3330" target="_blank">Watch YouTube Explanation</a></p>
 </article>
+<article>
+    <h3>Question 17</h3>
+    <pre><code>public class Main {
+    public static void main(String[] args) {
+        int a = 1_2_2_3;
+        
+        System.out.println(a);
+    }
+}</code></pre>
+    <p><strong>Topic:</strong> Underscores in Numeric Literals</p>
+    <p>What will be the output of this program when it is run?</p>
+    <ul>
+        <li><strong>A.</strong> 1223</li>
+        <li><strong>B.</strong> Compilation Error: Invalid underscore placement</li>
+        <li><strong>C.</strong> 1_2_2_3</li>
+        <li><strong>D.</strong> Exception</li>
+    </ul>
+    <p><strong>Answer:</strong> A. 1223</p>
+    <p><strong>Explanation:</strong> In Java, underscores (`_`) can be used in numeric literals to improve readability. They do not affect the actual value of the number. The value of `a = 1_2_2_3` is interpreted as `1223` and will be printed as such. Java allows underscores in numeric literals as long as they are placed between digits, but not at the start or end of the literal.</p>
+    <p><a href="https://youtu.be/IJ0xCDR_Dlw?si=Vu4ZVFBjae7U7zZr&t=2678" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+<article>
+    <h3>Question 18</h3>
+    <pre><code>public class Main {
+    public static void main(String[] args) {
+        int a = 1223_;
+        
+        System.out.println(a);
+    }
+}</code></pre>
+    <p><strong>Topic:</strong> Underscores in Numeric Literals</p>
+    <p>What will be the outcome when you try to compile this program?</p>
+    <ul>
+        <li><strong>A.</strong> 1223</li>
+        <li><strong>B.</strong> Compilation Error: illegal underscore</li>
+        <li><strong>C.</strong> Exception</li>
+        <li><strong>D.</strong> 1223_</li>
+    </ul>
+    <p><strong>Answer:</strong> B. Compilation Error: illegal underscore</p>
+    <p><strong>Explanation:</strong> In Java, underscores (`_`) can be used in numeric literals to improve readability, but they must be placed between digits. An underscore at the end of the number, like in `1223_`, is not allowed and will cause a compilation error with the message "illegal underscore."</p>
+    <p><a href="https://youtu.be/IJ0xCDR_Dlw?si=1hjesQ_HKQesI50F&t=3239" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+
 
 
         </section>
