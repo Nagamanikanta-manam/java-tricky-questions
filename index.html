@@ -276,6 +276,158 @@ footer {
     <p><strong>Explanation:</strong> The `char` data type in Java is a primitive type and cannot hold the `null` value. `null` is used for object references, not for primitive types like `char`. Therefore, trying to assign `null` to a `char` variable will result in a compilation error.</p>
     <p><a href="https://youtu.be/HYAosZptldA?si=iLZ-2-G41lsyEXBw&t=3153" target="_blank">Watch YouTube Explanation</a></p>
 </article>
+<article>
+    <h3>Question 10</h3>
+    <pre><code>public class Main {
+    public static void main(String[] args) {
+        int i = 0786;
+        System.out.println(i);
+    }
+}</code></pre>
+    <p><strong>Topic:</strong> Number Systems and Literals</p>
+    <p>What will be the outcome when you try to compile this program?</p>
+    <ul>
+        <li><strong>A.</strong> 786</li>
+        <li><strong>B.</strong> 0</li>
+        <li><strong>C.</strong> Compilation Error: the value 0786 is out of range</li>
+        <li><strong>D.</strong> 78</li>
+    </ul>
+    <p><strong>Answer:</strong> C. Compilation Error: the value 0786 is out of range</p>
+    <p><strong>Explanation:</strong> In Java, numbers starting with `0` are treated as octal (base 8) literals. The valid digits for octal numbers are 0-7. Since `8` is not a valid octal digit, the code results in a compilation error with the message "the value 0786 is out of range".</p>
+    <p><a href="https://youtu.be/Eng8Oi-p2r4?si=q55WHeoZDSO_5hLn&t=1091" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+<article>
+    <h3>Question 5</h3>
+    <pre><code>public class Main {
+    public static void main(String[] args) {
+        int i = 0xface;
+        System.out.println(i);
+    }
+}</code></pre>
+    <p><strong>Topic:</strong> Hexadecimal Literals</p>
+    <p>What will be the output of this program when it is run?</p>
+    <ul>
+        <li><strong>A.</strong> Compilation Error: Invalid number format</li>
+        <li><strong>B.</strong> face</li>
+        <li><strong>C.</strong> 64206</li>
+        <li><strong>D.</strong> 2538</li>
+    </ul>
+    <p><strong>Answer:</strong> C. 64206</p>
+    <p><strong>Explanation:</strong> In Java, numbers starting with `0x` or `0X` represent hexadecimal (base 16) literals. The value `0xface` is a valid hexadecimal number that translates to the decimal value `64206`. When printed, it outputs `64206`.</p>
+    <p><a href="https://youtu.be/Eng8Oi-p2r4?si=q55WHeoZDSO_5hLn&t=1091" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+<article>
+    <h3>Question 6</h3>
+    <pre><code>public class Main {
+    public static void main(String[] args) {
+        int i = 10;
+        int j = 010;
+        int k = 0x10;
+        
+        System.out.println(i + ".." + j + ".." + k);
+    }
+}</code></pre>
+    <p><strong>Topic:</strong> Decimal, Octal, and Hexadecimal Literals</p>
+    <p>What will be the output of this program when it is run?</p>
+    <ul>
+        <li><strong>A.</strong> 10..10..10</li>
+        <li><strong>B.</strong> 10..8..16</li>
+        <li><strong>C.</strong> 10..8..10</li>
+        <li><strong>D.</strong> Compilation Error</li>
+    </ul>
+    <p><strong>Answer:</strong> B. 10..8..16</p>
+    <p><strong>Explanation:</strong> 
+        - `i = 10` is a decimal literal and will be printed as `10`.
+        - `j = 010` is an octal (base 8) literal because it starts with `0`. In octal, `010` is equivalent to `8` in decimal.
+        - `k = 0x10` is a hexadecimal (base 16) literal because it starts with `0x`. In hexadecimal, `0x10` is equivalent to `16` in decimal.
+        Thus, the output will be `10..8..16`.</p>
+    <p><a href="https://youtu.be/Eng8Oi-p2r4?si=ticeoZ_-OWEetaWK&t=1520" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+<article>
+    <h3>Question 7</h3>
+    <pre><code>public class Main {
+    public static void main(String[] args) {
+        double i = 10.0d;
+        
+        System.out.println(i);
+    }
+}</code></pre>
+    <p><strong>Topic:</strong> Floating-Point Literals</p>
+    <p>What will be the output of this program when it is run?</p>
+    <ul>
+        <li><strong>A.</strong> 10</li>
+        <li><strong>B.</strong> 10.0</li>
+        <li><strong>C.</strong> 10.0d</li>
+        <li><strong>D.</strong> Compilation Error</li>
+    </ul>
+    <p><strong>Answer:</strong> B. 10.0</p>
+    <p><strong>Explanation:</strong> The variable `i` is declared as a `double` and initialized with the value `10.0d`. In Java, the suffix `d` denotes a double literal, but it is not printed in the output. The value printed will be `10.0`, the double representation of `10`.</p>
+    <p><a href="https://youtu.be/Eng8Oi-p2r4?si=F9hqo7iDResrsAUr" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+<article>
+    <h3>Question 8</h3>
+    <pre><code>public class Main {
+    public static void main(String[] args) {
+        double i = 10.0d;
+        
+        System.out.println(i);
+    }
+}</code></pre>
+    <p><strong>Topic:</strong> Floating-Point Literals</p>
+    <p>What will be the output of this program when it is run?</p>
+    <ul>
+        <li><strong>A.</strong> 10</li>
+        <li><strong>B.</strong> 10.0</li>
+        <li><strong>C.</strong> 10.0d</li>
+        <li><strong>D.</strong> Compilation Error</li>
+    </ul>
+    <p><strong>Answer:</strong> B. 10.0</p>
+    <p><strong>Explanation:</strong> The variable `i` is declared as a `double` and initialized with the value `10.0d`. In Java, the suffix `d` denotes a double literal, but it is not printed in the output. The value printed will be `10.0`, the double representation of `10`.</p>
+    <p><a href="https://youtu.be/Eng8Oi-p2r4?si=F9hqo7iDResrsAUr" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+<article>
+    <h3>Question 9</h3>
+    <pre><code>public class Main {
+    public static void main(String[] args) {
+        float i = 10.0;
+        
+        System.out.println(i);
+    }
+}</code></pre>
+    <p><strong>Topic:</strong> Data Types and Type Conversion</p>
+    <p>What will be the outcome when you try to compile this program?</p>
+    <ul>
+        <li><strong>A.</strong> 10.0</li>
+        <li><strong>B.</strong> Compilation Error: incompatible types: possible lossy conversion from double to float</li>
+        <li><strong>C.</strong> 10.0f</li>
+        <li><strong>D.</strong> No Output</li>
+    </ul>
+    <p><strong>Answer:</strong> B. Compilation Error: incompatible types: possible lossy conversion from double to float</p>
+    <p><strong>Explanation:</strong> In Java, a floating-point literal like `10.0` is considered a `double` by default. Assigning a `double` literal to a `float` variable without an explicit cast or `f` suffix results in a compilation error due to the potential loss of precision. To fix this, you can use `float i = 10.0f;`.</p>
+    <p><a href="https://youtu.be/Eng8Oi-p2r4?si=U1FJARed7wvXOF4J&t=2648" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+<article>
+    <h3>Question 10</h3>
+    <pre><code>public class Main {
+    public static void main(String[] args) {
+        double i = 0x10.0;
+        
+        System.out.println(i);
+    }
+}</code></pre>
+    <p><strong>Topic:</strong> Hexadecimal and Floating-Point Literals</p>
+    <p>What will be the outcome when you try to compile this program?</p>
+    <ul>
+        <li><strong>A.</strong> 16.0</li>
+        <li><strong>B.</strong> Compilation Error: malformed floating-point literal</li>
+        <li><strong>C.</strong> 0x10</li>
+        <li><strong>D.</strong> No Output</li>
+    </ul>
+    <p><strong>Answer:</strong> B. Compilation Error: malformed floating-point literal</p>
+    <p><strong>Explanation:</strong> In Java, hexadecimal literals (numbers starting with `0x`) are used only for integers, not for floating-point numbers. Attempting to assign a hexadecimal value with a fractional part (like `0x10.0`) will cause a compilation error with the message "malformed floating-point literal." Java does not support floating-point hexadecimal literals in this form.</p>
+    <p><a href="https://youtu.be/Eng8Oi-p2r4?si=jOtHVUN_QTmIWXij&t=3330" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+
 
         </section>
     </main>
