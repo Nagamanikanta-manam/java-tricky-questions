@@ -690,6 +690,34 @@ a[0].length();</code></pre>
         In Java, arrays use the property `length` to get the size of the array, while `String` uses the `length()` method to get the number of characters in the string. Attempting to use `length()` on an array or `length` on a string will result in a compile-time error.</p>
     <p><a href="https://youtu.be/I_aJgAmDYPk?si=XKYpEqRkuNrSinta&t=2140" target="_blank">Watch YouTube Explanation</a></p>
 </article>
+            <article>
+    <h3>Question 29</h3>
+    <pre><code>public class Main {
+    public static void main(String args[]) {
+        int[][] a = new int[4][3];
+        a[0] = new int[4];
+        a[1] = new int[3];
+        a = new int[3][2];
+    }
+}</code></pre>
+    <p><strong>Topic:</strong> Garbage Collection in Multidimensional Arrays</p>
+    <p>How many objects are created in memory, and how many are eligible for garbage collection after the last assignment?</p>
+    <ul>
+        <li><strong>A.</strong> 9 objects created, 5 eligible for garbage collection</li>
+        <li><strong>B.</strong> 11 objects created, 7 eligible for garbage collection</li>
+        <li><strong>C.</strong> 7 objects created, 4 eligible for garbage collection</li>
+        <li><strong>D.</strong> 11 objects created, 4 eligible for garbage collection</li>
+    </ul>
+    <p><strong>Answer:</strong> B. 11 objects created, 7 eligible for garbage collection</p>
+    <p><strong>Explanation:</strong> 
+        - Initially, `a = new int[4][3]` creates 5 objects (1 for the 2D array and 4 for the inner 1D arrays).
+        - `a[0] = new int[4]` creates 1 new object, making the previous `a[0]` eligible for garbage collection.
+        - `a[1] = new int[3]` creates 1 new object, making the previous `a[1]` eligible for garbage collection.
+        - `a = new int[3][2]` creates 4 more objects (1 for the new 2D array and 3 for the inner 1D arrays), making the previous 2D array and its remaining 2 unreferenced rows eligible for garbage collection.
+        - In total, 11 objects were created and 7 objects are now eligible for garbage collection (the original 4x3 array and its unreferenced rows).</p>
+    <p><a href="https://youtu.be/mkQsfdMITM8?si=ZIGWxZGGyzKgCnF3&t=2851" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+
 
 
 
