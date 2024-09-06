@@ -589,6 +589,60 @@ footer {
         In Java, the size of an array must be specified using an `int`, `byte`, or `short` literal. The size provided in the code is `10l`, which is of type `long`. Java requires the array size to be of type `int` (or types that can be implicitly cast to `int`), so trying to initialize the array with a `long` value will result in a compile-time error: "Incompatible types: possible lossy conversion from long to int."</p>
     <p><a href="https://youtu.be/HSp0UX9Z8Zw?si=DygEYVsrJ2fRCfvw&t=3812" target="_blank">Watch YouTube Explanation</a></p>
 </article>
+<article>
+    <h3>Question 26</h3>
+    <pre><code>Which of the following array declarations are valid in Java?</code></pre>
+    <ul>
+        <li><strong>A.</strong> int[] a = new int[];</li>
+        <li><strong>B.</strong> int[] a = new int[3];</li>
+        <li><strong>C.</strong> int[][] a = new int[][];</li>
+        <li><strong>D.</strong> int[][] a = new int[3][];</li>
+        <li><strong>E.</strong> int[][] a = new int[][4];</li>
+        <li><strong>F.</strong> int[][] a = new int[3][4];</li>
+        <li><strong>G.</strong> int[][][] a = new int[3][4][5];</li>
+        <li><strong>H.</strong> int[][][] a = new int[3][4][];</li>
+        <li><strong>I.</strong> int[][][] a = new int[3][][5];</li>
+        <li><strong>J.</strong> int[][][] a = new int[4][5];</li>
+    </ul>
+    <p><strong>Answer:</strong> 
+        - Valid: B, D, F, G, H
+        - Invalid: A, C, E, I, J</p>
+    <p><strong>Explanation:</strong> 
+        - <strong>A:</strong> `int[] a = new int[];` is invalid because the array size must be specified.
+        - <strong>B:</strong> `int[] a = new int[3];` is valid, declaring a 1D array of size 3.
+        - <strong>C:</strong> `int[][] a = new int[][];` is invalid because the size must be specified for at least one dimension.
+        - <strong>D:</strong> `int[][] a = new int[3][];` is valid, declaring a 2D array with 3 rows, where column sizes are not specified.
+        - <strong>E:</strong> `int[][] a = new int[][4];` is invalid because the size of the first dimension must be specified.
+        - <strong>F:</strong> `int[][] a = new int[3][4];` is valid, declaring a 2D array with 3 rows and 4 columns.
+        - <strong>G:</strong> `int[][][] a = new int[3][4][5];` is valid, declaring a 3D array.
+        - <strong>H:</strong> `int[][][] a = new int[3][4][];` is valid, declaring a 3D array with the last dimension left unspecified.
+        - <strong>I:</strong> `int[][][] a = new int[3][][5];` is invalid because the second dimension size must be specified if the third dimension size is given.
+        - <strong>J:</strong> `int[][][] a = new int[4][5];` is invalid because the third dimension size is missing.</p>
+    <p><a href="https://youtu.be/Qtw3nVWqf-w?si=-XFSIu2iSugLVD6b&t=1273" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+<article>
+    <h3>Question 19</h3>
+    <pre><code>public class Main {
+    public static void main(String args[]) {
+        int[][] a = new int[3][];
+        System.out.print(a[0]);
+    }
+}</code></pre>
+    <p><strong>Topic:</strong> Multidimensional Array Initialization</p>
+    <p>What will be the output when this code is executed?</p>
+    <ul>
+        <li><strong>A.</strong> Compilation Error: Array index out of bounds</li>
+        <li><strong>B.</strong> 0</li>
+        <li><strong>C.</strong> null</li>
+        <li><strong>D.</strong> [I@<em>hashcode</em></li>
+    </ul>
+    <p><strong>Answer:</strong> C. null</p>
+    <p><strong>Explanation:</strong> 
+        The array `a` is declared as a 2D array with 3 rows, but the inner arrays (columns) are not initialized. When you access `a[0]`, you are accessing an uninitialized row, which will return `null`. Therefore, the output is `null`. If the inner arrays were initialized (e.g., `a[0] = new int[4];`), the reference would point to the memory location of that array.</p>
+    <p><a href="https://youtu.be/Qtw3nVWqf-w?si=dVAq5QVsxsE8gf07&t=2060" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+
+
 
 
 
