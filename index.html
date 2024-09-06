@@ -621,7 +621,7 @@ footer {
     <p><a href="https://youtu.be/Qtw3nVWqf-w?si=-XFSIu2iSugLVD6b&t=1273" target="_blank">Watch YouTube Explanation</a></p>
 </article>
 <article>
-    <h3>Question 19</h3>
+    <h3>Question 27</h3>
     <pre><code>public class Main {
     public static void main(String args[]) {
         int[][] a = new int[3][];
@@ -640,6 +640,55 @@ footer {
     <p><strong>Explanation:</strong> 
         The array `a` is declared as a 2D array with 3 rows, but the inner arrays (columns) are not initialized. When you access `a[0]`, you are accessing an uninitialized row, which will return `null`. Therefore, the output is `null`. If the inner arrays were initialized (e.g., `a[0] = new int[4];`), the reference would point to the memory location of that array.</p>
     <p><a href="https://youtu.be/Qtw3nVWqf-w?si=dVAq5QVsxsE8gf07&t=2060" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+
+<article>
+    <h3>Question 28</h3>
+    <pre><code>public class Main {
+    public static void main(String args[]) {
+        int[] a;
+        a = {2, 3, 4};
+        System.out.print(a[0]);
+    }
+}</code></pre>
+    <p><strong>Topic:</strong> Array Initialization</p>
+    <p>What will happen when you try to compile this code?</p>
+    <ul>
+        <li><strong>A.</strong> The program will compile and run successfully, printing 2</li>
+        <li><strong>B.</strong> Compile-time Error: Array elements must be specified during declaration</li>
+        <li><strong>C.</strong> Compile-time Error: Array initialization is incorrect</li>
+        <li><strong>D.</strong> Run-time Error: ArrayIndexOutOfBoundsException</li>
+    </ul>
+    <p><strong>Answer:</strong> C. Compile-time Error: Array initialization is incorrect</p>
+    <p><strong>Explanation:</strong> 
+        In Java, array initialization using curly braces (`{2, 3, 4}`) is allowed only during declaration. The correct syntax is either `int[] a = {2, 3, 4};` or `a = new int[]{2, 3, 4};`. In this case, since the array was declared separately, the initializer should be used with the `new int[]` keyword, or it must be done during the declaration itself.</p>
+    <p><a href="https://youtu.be/I_aJgAmDYPk?si=l20jvqHdlwnHDbPw" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+<article>
+    <h3>Question 28</h3>
+    <pre><code>String[] a = {"a", "AA"};
+a.length;
+a.length();
+a[0].length;
+a[0].length();</code></pre>
+    <p><strong>Topic:</strong> Array Length vs String Length Methods</p>
+    <p>Which of the following lines will result in a compile-time error, and which will run successfully?</p>
+    <ul>
+        <li><strong>A.</strong> `a.length;`</li>
+        <li><strong>B.</strong> `a.length();`</li>
+        <li><strong>C.</strong> `a[0].length;`</li>
+        <li><strong>D.</strong> `a[0].length();`</li>
+    </ul>
+    <p><strong>Answer:</strong></p>
+    <ul>
+        <li><strong>A.</strong> Will compile and run successfully. `a.length` returns the number of elements in the array, which is 2 in this case.</li>
+        <li><strong>B.</strong> Compile-time Error: `length()` is a method for `String`, not for arrays. For arrays, you use `length` without parentheses.</li>
+        <li><strong>C.</strong> Compile-time Error: `a[0].length` is invalid for `String`. The `length` of a `String` is obtained using the `length()` method, not as a property.</li>
+        <li><strong>D.</strong> Will compile and run successfully. `a[0].length()` returns the number of characters in the first string (`"a"`), which is 1.</li>
+    </ul>
+    <p><strong>Explanation:</strong> 
+        In Java, arrays use the property `length` to get the size of the array, while `String` uses the `length()` method to get the number of characters in the string. Attempting to use `length()` on an array or `length` on a string will result in a compile-time error.</p>
+    <p><a href="https://youtu.be/I_aJgAmDYPk?si=XKYpEqRkuNrSinta&t=2140" target="_blank">Watch YouTube Explanation</a></p>
 </article>
 
 
