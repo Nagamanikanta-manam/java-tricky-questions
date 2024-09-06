@@ -717,6 +717,51 @@ a[0].length();</code></pre>
         - In total, 11 objects were created and 7 objects are now eligible for garbage collection (the original 4x3 array and its unreferenced rows).</p>
     <p><a href="https://youtu.be/mkQsfdMITM8?si=ZIGWxZGGyzKgCnF3&t=2851" target="_blank">Watch YouTube Explanation</a></p>
 </article>
+<article>
+    <h3>Question 29</h3>
+    <pre><code>public class Main {
+    public static void main(String args[]) {
+        int x;
+        if (args.length > 10) {
+            x = 10;
+        }
+        System.out.print(x);
+    }
+}</code></pre>
+    <p><strong>Topic:</strong> Variable Initialization</p>
+    <p>What will be the result when you try to compile this code?</p>
+    <ul>
+        <li><strong>A.</strong> It will compile and run successfully, printing a value of `x`</li>
+        <li><strong>B.</strong> Compile-time Error: `x` is used without being initialized</li>
+        <li><strong>C.</strong> Runtime Error: `NullPointerException`</li>
+        <li><strong>D.</strong> Compile-time Error: ArrayIndexOutOfBoundsException</li>
+    </ul>
+    <p><strong>Answer:</strong> B. Compile-time Error: `x` is used without being initialized</p>
+    <p><strong>Explanation:</strong> 
+        The local variable `x` is declared but only conditionally initialized inside the `if` statement. If `args.length` is less than or equal to 10, the variable `x` will not be initialized, and attempting to print it results in a compile-time error: "variable `x` might not have been initialized." To resolve this, ensure that `x` is initialized before it is used, either by giving it a default value or by handling all code paths.</p>
+    <p><a href="https://youtu.be/CQMaVTO0Cfk?si=VV46Wp71k_LaWPLK&t=1833" target="_blank">Watch YouTube Explanation</a></p>
+</article>
+<article>
+    <h3>Question 30</h3>
+    <pre><code>public class Main {
+    public static void main(String args[]) {
+        public int x = 10;
+        System.out.print(x);
+    }
+}</code></pre>
+    <p><strong>Topic:</strong> Variable Declaration Scope</p>
+    <p>What will be the result when you try to compile this code?</p>
+    <ul>
+        <li><strong>A.</strong> The program will compile and run successfully, printing 10</li>
+        <li><strong>B.</strong> Compile-time Error: Illegal start of expression</li>
+        <li><strong>C.</strong> Runtime Error: Variable cannot be printed</li>
+        <li><strong>D.</strong> Compile-time Error: `x` is declared as `public` within a method</li>
+    </ul>
+    <p><strong>Answer:</strong> B. Compile-time Error: Illegal start of expression</p>
+    <p><strong>Explanation:</strong> 
+        In Java, variable declarations inside methods cannot have access modifiers like `public`, `private`, or `protected`. These modifiers are only applicable to fields (class-level variables), methods, or classes themselves. Declaring a local variable within a method with the `public` modifier results in a compile-time error. To fix the issue, remove the `public` keyword from the variable declaration.</p>
+    <p><a href="https://youtu.be/CQMaVTO0Cfk?si=jgDVf9LuMhwIx56X&t=2714" target="_blank">Watch YouTube Explanation</a></p>
+</article>
 
 
 
