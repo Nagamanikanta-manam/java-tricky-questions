@@ -762,6 +762,28 @@ a[0].length();</code></pre>
         In Java, variable declarations inside methods cannot have access modifiers like `public`, `private`, or `protected`. These modifiers are only applicable to fields (class-level variables), methods, or classes themselves. Declaring a local variable within a method with the `public` modifier results in a compile-time error. To fix the issue, remove the `public` keyword from the variable declaration.</p>
     <p><a href="https://youtu.be/CQMaVTO0Cfk?si=jgDVf9LuMhwIx56X&t=2714" target="_blank">Watch YouTube Explanation</a></p>
 </article>
+<article>
+    <h3>Question 31</h3>
+    <pre><code>public class Main {
+    static {
+        System.out.println(10);
+    }
+    public static void main(String args[]) {
+    }
+}</code></pre>
+    <p><strong>Topic:</strong> Static Block Execution</p>
+    <p>What will happen when you run this program?</p>
+    <ul>
+        <li><strong>A.</strong> The program will print `10` before the `main` method runs</li>
+        <li><strong>B.</strong> The program will not print anything as the `main` method is empty</li>
+        <li><strong>C.</strong> Compile-time Error: Static blocks are not allowed</li>
+        <li><strong>D.</strong> Runtime Error: `NullPointerException`</li>
+    </ul>
+    <p><strong>Answer:</strong> A. The program will print `10` before the `main` method runs</p>
+    <p><strong>Explanation:</strong> 
+        In Java, static blocks are executed when the class is loaded into memory, before the execution of the `main` method. In this case, the `System.out.println(10);` inside the static block will run as soon as the class is loaded, and the output will be `10`. The `main` method will not print anything because it is empty, but the static block will still execute.</p>
+    <p><a href="https://youtu.be/example" target="_blank">Watch YouTube Explanation</a></p>
+</article>
 
 
 
